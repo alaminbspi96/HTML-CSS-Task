@@ -1,0 +1,20 @@
+/* vertical icon */
+.icon-bar{
+    width: 90px;
+    background-color: rgba(143, 138, 153, 0.274);
+}
+.icon-bar a{
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s;
+    color: black;
+    font-size: 30px;
+}
+.icon-bar a:hover{
+    background-color: rgb(240, 14, 82);
+}
+.active{
+    background-color: rgba(13, 197, 74, 0.897); ;
+}
+
