@@ -1,0 +1,16 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+.nav-bar{
+    width: 100vw;
+    height: 75px;
+    background-color: #eee;
+}
+.side-bar{
+    height: 100vh;
+    background-color: rosybrown;
+    width: 20vw;
+}
