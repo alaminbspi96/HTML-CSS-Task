@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical tabs</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h2>Vertical Tabs</h2>
+    <p>click on the buttons inside the tabbed menu:</p>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'One')" id="defaultOpen">One</button>
+        <button class="tablinks" onclick="openCity(event, 'Two')" id="defaultOpen">Two</button>
+        <button class="tablinks" onclick="openCity(event, 'Three')" id="defaultOpen">Three</button>
+    </div>
+    <div id="One" class="tabcontent">
+        <h3>Number One</h3>
+        <p>This is the first number in number system</p>
+    </div>
+    <div id="Two" class="tabcontent">
+        <h3>Number Two</h3>
+        <p>This is the Second number in number system</p>
+    </div>
+    <div id="Three" class="tabcontent">
+        <h3>Number Three</h3>
+        <p>This is the third number in number system</p>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += "active";
+        }
+    </script>
+
+</body>
+</html>
