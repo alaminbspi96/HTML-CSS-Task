@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Header</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Click on the buttons inside the tabbed menu:</p>
+    <div id="Fruit" class="tabcontent">
+        <h1>Fruit</h1>
+        <p>Jack-fruit is one kind of fruit</p>
+    </div>
+    <div id="Fish" class="tabcontent">
+        <h1>Fish</h1>
+        <p>Hilsha Fish is our national Fish</p>
+    </div>
+    <div id="Flower" class="tabcontent">
+        <h1>Flower</h1>
+        <p>Water Lily is our national Flower</p>
+    </div>
+    <div id="Animal" class="tabcontent">
+        <h1>Animal</h1>
+        <p>Tiger is our national Animal</p>
+    </div>
+
+    <button class="tablink" onclick="openCity('Fruit', this, 'red')" id="defaultOpen">Fruit</button>
+
+    <button class="tablink" onclick="openCity('Fish', this, 'green')" id="defaultOpen">Fish</button>
+
+    <button class="tablink" onclick="openCity('Flower', this, 'blue')" id="defaultOpen">Flower</button>
+
+    <button class="tablink" onclick="openCity('Animal', this, 'orange')" id="defaultOpen">Animal</button>
+
+
+
+<script>
+    function openCity(cityName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(cityName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+    }
+    document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
