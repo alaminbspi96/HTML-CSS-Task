@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrink Navbar On Scroll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="#default" id="logo">CompanyLogo</a>
+        <div id="navbar-right">
+            <a href="#home" class="active">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+    <div style="margin-top: 210px; padding: 15px 15px 2500px; font-size: 30px;">
+        <p><b>This example Scroll down this frame to see the effect.Scroll down this frame to see the effect.Scroll down this frame to see the effect.Scroll down this frame to see the effect.</b></p>
+        <p>Scroll down this frame to see the effect.</p>
+        <p>Scroll down this frame to see the effect.Scroll down this frame to see the effect.</p>
+        <p><b>Scroll down this frame to see the effect.</b>Scroll down this frame to see the effect.Scroll down this frame to see the effect.</p>
+    </div>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.padding = "30px 10px";
+                document.getElementById("logo").style.fontSize = "25px";
+            } else {
+                document.getElementById("navbar").style.padding = "80px 10px";
+                document.getElementById("logo").style.fontSize = "35px";
+            }
+        }
+    </script>
+</body>
+</html>
