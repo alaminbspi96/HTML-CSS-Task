@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="text-align: center;">
+        <h2>Tabbed Image Gallery</h2>
+        <p>Click on the images below:</p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="img/image1.jpg" alt="Nature" style="width: 100%;" onclick="myFunction(this)">
+        </div>
+        <div class="column">
+            <img src="img/image2.jpg" alt="Snow" style="width: 100%;" onclick="myFunction(this)">
+        </div>
+        <div class="column">
+            <img src="img/image3.jpg" alt="NatureOcean" style="width: 100%;" onclick="myFunction(this)">
+        </div>
+        <div class="column">
+            <img src="img/image4.jpg" alt="NatureOcean" style="width: 100%;" onclick="myFunction(this)">
+        </div>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width: 100%;">
+        <div id="imgtext"></div>
+    </div>
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+</body>
+</html>
