@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio with filtering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MAIN (Center website) -->
+    <div class="main">
+        <h1>MYLOGO.COM</h1>
+        <hr>
+        <h2>PORTFOLIO</h2>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">Show all</button>
+            <button class="btn" onclick="filterSelection('nature')">Nature</button>
+            <button class="btn" onclick="filterSelection('cars')">Cars</button>
+            <button class="btn" onclick="filterSelection('people')">People</button>
+        </div>
+
+        <div class="row">
+            <div class="column nature">
+                <div class="content">
+                    <img src="img/image1.jpg" alt="Nature1" style="width: 100%;">
+                    <h4>Nature1</h4>
+                    <p>Lorem Ipsum dolor...</p>
+                </div>
+            </div>
+            <div class="column nature">
+                <div class="content">
+                    <img src="img/image2.jpg" alt="Nature2" style="width: 100%;">
+                    <h4>Nature2</h4>
+                    <p>Lorem Ipsum dolor...</p>
+                </div>
+            </div>
+            <div class="column nature">
+                <div class="content">
+                    <img src="img/image3.jpg" alt="Nature3" style="width: 100%;">
+                    <h4>Nature3</h4>
+                    <p>Lorem Ipsum dolor...</p>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="img/image4.jpg" alt="Nature4" style="width: 100%;">
+                    <h4>Nature4</h4>
+                    <p>Lorem Ipsum dolor...</p>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="img/image5.jpg" alt="Nature5" style="width: 100%;">
+                    <h4>Nature5</h4>
+                    <p>Lorem Ipsum dolor...</p>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="img/image6.jpg" alt="Nature6" style="width: 100%;">
+                    <h4>Nature6</h4>
+                    <p>Lorem Ipsum dolor...</p>
+                </div>
+            </div>
+            <div class="column people">
+                <div class="content">
+                    <img src="img/einstain.jpg" alt="einstain" style="width: 100%;">
+                    <h4>Einestain</h4>
+                    <p>Lorem ipsum is dolor..</p>
+                </div>
+            </div>
+            <div class="column people">
+                <div class="content">
+                    <img src="img/girl.jpg" alt="Natasha" style="width: 100%;">
+                    <h4>Natasha</h4>
+                    <p>Lorem ipsum is dolor..</p>
+                </div>
+            </div>
+            <div class="column people">
+                <div class="content">
+                    <img src="img/little.jpg" alt="little" style="width: 100%;">
+                    <h4>Ayman</h4>
+                    <p>Lorem ipsum is dolor..</p>
+                </div>
+            </div>
+            <!-- END GRID -->
+        </div>
+        <!-- END MAIN -->
+    </div>
+
+    <script src="filter.js"></script>
+</body>
+</html>
