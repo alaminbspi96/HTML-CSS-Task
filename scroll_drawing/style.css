@@ -1,0 +1,13 @@
+body {
+    height: 2000px;
+    background: #f1f1f1;
+}
+#mySVG {
+    position: fixed;
+    top: 15%;
+    width: 400px;
+    height: 210px;
+    margin-left: -50px;
+}
+
+
