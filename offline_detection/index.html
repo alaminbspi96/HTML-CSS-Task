@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OffLine or OnLine Detection</title>
+</head>
+<body>
+    <p>Click the button to see if the browser is online.</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = "Is the browser online? " + navigator.onLine;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</body>
+</html>
