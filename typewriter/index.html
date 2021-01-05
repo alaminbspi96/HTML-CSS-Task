@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeWriter</title>
+</head>
+<body>
+    <h1>TypeWriter</h1>
+    <button onclick="typeWriter()">Click me</button>
+    <p id="demo"></p>
+
+    <script>
+        var i = 0;
+        var txt = 'Lorem ipsum dummy text blalab.';
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+</body>
+</html>
